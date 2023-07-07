@@ -1,0 +1,53 @@
+@use 'utilities' as *;
+
+// GALLERY
+
+.gallery {
+	display: none;
+	padding: 2em 0;
+	background-color: $dark-green;
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		height: 50rem;
+		gap: 1rem;
+
+		& > .gallery__img {
+			flex: 1;
+			border-radius: 1rem;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+		}
+
+		& > .gallery__img:hover {
+			flex: 7;
+		}
+	}
+
+	&__bg1 {
+		background: url(../img/campfire.jpg);
+	}
+
+	&__bg2 {
+		background: url(../img/china.jpg);
+	}
+
+	&__bg3 {
+		background: url(../img/bonfire.jpg);
+	}
+
+	&__bg4 {
+		background: url(../img/mountains.jpg);
+	}
+
+	&__bg5 {
+		background: url(../img/cycling.jpg);
+	}
+
+	&__bg6 {
+		background: url(../img/the-person.jpg);
+	}
+}

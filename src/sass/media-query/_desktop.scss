@@ -1,0 +1,72 @@
+@use 'utilities' as *;
+
+@media (min-width: 992px) {
+	.section-padding {
+		padding: 3em 2em;
+	}
+
+	.section-heading {
+		font-size: 4rem;
+	}
+
+	.header {
+		height: 350px;
+		background-image: url('../img/header-desktop.jpg');
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__heading {
+			font-size: 3.2rem;
+			font-weight: 700;
+		}
+	}
+
+	.about {
+		&__box {
+			&-img {
+				display: block;
+			}
+		}
+		&__text {
+			font-size: 1.8rem;
+			line-height: 1.8;
+		}
+	}
+
+	.hero {
+		padding: 6em 2em;
+		background-image: url('../img/child-desktop.jpg');
+		background-attachment: fixed;
+
+		.hero__box {
+			padding: 2em;
+		}
+
+		&__box-title {
+			font-size: 3.2rem;
+		}
+	}
+
+	.offers {
+		&__box {
+			flex-wrap: nowrap;
+		}
+
+		&__card {
+			min-height: 410px;
+			margin: 2em 1em;
+		}
+	}
+
+	.gallery {
+		display: block;
+	}
+
+	.footer {
+		&__boxes {
+			padding: 2em 0;
+		}
+	}
+}

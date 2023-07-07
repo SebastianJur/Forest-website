@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt Forest Group">
+    <title>Kontakt</title>
+    <!-- @include 'head.kit' -->
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body class="main-page">
+    <!-- @include 'nav.kit' -->
+    <main>
+        <section id="contact" class="contact section section-padding">
+            <div class="wrapper wrapper--narrow">
+                <h2 class="section-heading section-heading--top-margin section-heading--white">Formularz Kontaktowy</h2>
+                <div class="contact__box">
+                    <form class="contact__form">
+                        <div class="contact__form-box">
+                            <label for="name" class="contact__label">Imię:</label>
+                            <input type="text" id="name" name="name" class="contact__input" required>
+                        </div>
+                        <div class="contact__form-box">
+                            <label for="email" class="contact__label">Email:</label>
+                            <input type="email" id="email" name="email" class="contact__input" required>
+                        </div>
+                        <div class="contact__form-box">
+                            <label for="msg" class="contact__label">Wiadomość:</label>
+                            <textarea name="msg" id="msg" class="contact__input contact__textarea" required></textarea>
+                        </div>
+                        <button class="contact__button">Wyślij</button>
+                    </form>
+                    <div class="contact__google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5119.796486178726!2d19.892844!3d50.088192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1687708446328!5m2!1spl!2spl"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- @include 'footer.kit'-->
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>

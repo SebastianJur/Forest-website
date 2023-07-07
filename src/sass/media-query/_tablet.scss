@@ -1,0 +1,149 @@
+@use 'utilities' as *;
+
+@media (min-width: 768px) {
+	.header {
+		text-align: left;
+
+		&__text {
+			font-size: 1.8rem;
+		}
+
+		&__heading {
+			font-size: 3rem;
+		}
+	}
+
+	.nav {
+		.hamburger {
+			display: none;
+		}
+
+		&__links {
+			display: none;
+		}
+
+		&__links-desktop {
+			display: flex;
+			height: 100%;
+		}
+
+		&__link {
+			margin: 0;
+			padding: 1.2em;
+			width: 110px;
+			height: 100%;
+			transition: background-color 0.3s, color 0.3s;
+
+			&:hover,
+			&.active {
+				color: $white;
+				background-color: $black;
+			}
+		}
+	}
+
+	.about {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-text {
+				width: 50%;
+			}
+
+			&-img {
+				display: flex;
+				align-items: center;
+				width: 45%;
+			}
+		}
+
+		&__img {
+			margin-bottom: 0;
+			max-height: 300px;
+		}
+	}
+
+	.offers {
+		&__info {
+			margin-bottom: 1.5em;
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		&__box {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__card {
+			margin: 1em;
+			width: 45%;
+			min-height: 400px;
+		}
+
+		&__card-name {
+			font-size: 2.8rem;
+		}
+
+		&__card-price {
+			font-size: 4.8rem;
+			font-weight: 700;
+		}
+
+		&__card-options {
+			line-height: 1.6;
+		}
+
+		&__card-option {
+			font-size: 1.8rem;
+		}
+	}
+
+	.contact {
+		&__form {
+			padding: 3em;
+		}
+
+		&__label {
+			font-size: 2rem;
+		}
+
+		&__input {
+			font-size: 1.6rem;
+		}
+
+		&__textarea {
+			min-height: 15em;
+		}
+
+		&__button {
+			font-size: 1.6rem;
+		}
+	}
+
+	.footer {
+		&__boxes {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		&__box-title {
+			font-size: 2.2rem;
+		}
+
+		&__box-list {
+			text-align: left;
+		}
+
+		&__box:first-child {
+			width: 50%;
+		}
+
+		&__box:not(:first-child) {
+			width: calc(52% / 3);
+		}
+	}
+}

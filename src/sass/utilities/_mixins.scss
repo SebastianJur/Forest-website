@@ -1,0 +1,19 @@
+@use 'colors' as *;
+
+@mixin heroImages($bgImg) {
+	background-image: url($bgImg);
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+}
+
+@mixin shadowImages {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $hero-shadow;
+	z-index: -1;
+}

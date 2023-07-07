@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona internetowa Forest Group">
+    <title>Forest</title>
+    <script src="https://kit.fontawesome.com/2a192d5724.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+
+<body class="main-page">
+    <nav class="nav">
+    <div class="wrapper wrapper--nav">
+
+        <div class="nav__logo">
+            <a href="index.html#home"><i class="fa-solid fa-tree"></i> Forest</a>
+        </div>
+
+        <div class="nav__links-mobile">
+            <a href="index.html#home" class="nav__link">Home</a>
+            <a href="index.html#about" class="nav__link">O nas</a>
+            <a href="index.html#offers" class="nav__link">Oferta</a>
+            <a href="contact.html" class="nav__link">Kontakt</a>
+        </div>
+
+        <div class="nav__links-desktop">
+            <a href="index.html#home" class="nav__link">Home</a>
+            <a href="index.html#about" class="nav__link">O nas</a>
+            <a href="index.html#offers" class="nav__link">Oferta</a>
+            <a href="contact.html" class="nav__link">Kontakt</a>
+        </div>
+
+        <button class="hamburger hamburger--spin" type="button" aria-label="Przycisk menu mobilnego">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+    </div>
+</nav>
+    <header id="home" class="header section">
+        <div class="wrapper">
+            <p class="header__text">Forest Group</p>
+            <h1 class="header__heading">Najpiękniejszy park w Twojej okolicy!</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="about" class="about section section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">o nas</h2>
+
+                <div class="about__box">
+                    <div class="about__box-img">
+                        <picture>
+                            <source srcset="../dist/img/aboutus-desktop.jpg" media="(min-width: 992px)">
+                            <img src="../dist/img/aboutus-mobile.jpg" srcset="../dist/img/aboutus-mobile.jpg 991w,
+                                         ../dist/img/aboutus-desktop.jpg 992w" sizes="(max-width: 991px) 100vw,
+                                        992px" alt="Zdjęcie jeziora w głębi lasu" class="about__img">
+                        </picture>
+                    </div>
+
+                    <div class="about__box-text">
+                        <h3 class="about__title">Niezapomniane przygody</h3>
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum. www.MMCSchool.pl
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="wrapper wrapper--narrow">
+                <div class="hero__box">
+                    <p class="hero__box-title">Przygoda dla całej rodziny</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="offers section section-padding">
+            <div class="wrapper wrapper--narrow">
+
+                <h2 class="section-heading">oferta</h2>
+                <p class="offers__info">Wybierz jedną z naszych wspaniałych ofert!</p>
+
+                <div class="offers__box">
+                    <div class="offers__card">
+                        <h3 class="offers__card-name">Demo</h3>
+                        <p class="offers__card-price">$0</p>
+                        <div class="offers__card-options">
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--excluded"><i
+                                    class="fa-solid fa-minus"></i>opcja poza pakietem</p>
+                            <p class="offers__card-option offers__card-option--excluded"><i
+                                    class="fa-solid fa-minus"></i>opcja poza pakietem</p>
+                            <p class="offers__card-option offers__card-option--excluded"><i
+                                    class="fa-solid fa-minus"></i>opcja poza pakietem</p>
+                        </div>
+                        <button class="offers__card-button">Wybierz</button>
+                    </div>
+
+                    <div class="offers__card">
+                        <h3 class="offers__card-name">Standard</h3>
+                        <p class="offers__card-price">$99</p>
+                        <div class="offers__card-options">
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--excluded"><i
+                                    class="fa-solid fa-minus"></i>opcja poza pakietem</p>
+                            <p class="offers__card-option offers__card-option--excluded"><i
+                                    class="fa-solid fa-minus"></i>opcja poza pakietem</p>
+                        </div>
+                        <button class="offers__card-button">Wybierz</button>
+                    </div>
+
+                    <div class="offers__card">
+                        <h3 class="offers__card-name">Premium</h3>
+                        <p class="offers__card-price">$299</p>
+                        <div class="offers__card-options">
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                            <p class="offers__card-option offers__card-option--included"><i
+                                    class="fa-solid fa-check"></i>opcja w pakiecie</p>
+                        </div>
+                        <button class="offers__card-button">Wybierz</button>
+                    </div>
+
+                </div>
+                <div class="offers__button-container">
+                    <a href="offers.html" class="offers__button">Więcej ofert<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="wrapper wrapper--narrow">
+        <div class="footer__boxes">
+            <div class="footer__box">
+                <h3 class="footer__box-logo">
+                    <i class="fa-solid fa-tree"></i>
+                    Forest
+                </h3>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__box-title">O nas</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item">Historia</li>
+                    <li class="footer__box-list-item">Parki</li>
+                    <li class="footer__box-list-item">Opinie</li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__box-title">Nasza firma</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item">Praca</li>
+                    <li class="footer__box-list-item">Kadry</li>
+                    <li class="footer__box-list-item">Zarząd</li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__box-title">Dokumenty</h3>
+                <ul class="footer__box-list">
+                    <li class="footer__box-list-item">Wnioski</li>
+                    <li class="footer__box-list-item">Rezerwacje</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <p class="footer__bottom-text"> &copy; <span class="footer_year"></span> Forest Group Company Ltd.</p>
+</footer>
+    <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/scroll.min.js"></script>
+</body>
+
+</html>

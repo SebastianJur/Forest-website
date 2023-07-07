@@ -1,0 +1,35 @@
+@use 'utilities/colors' as *;
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 79.5px;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.section-padding {
+	padding: 2em 1.5em;
+}
+
+.section-heading {
+	position: relative;
+	margin-bottom: 1em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	color: $black;
+
+	&--top-margin {
+		margin-top: 80px;
+	}
+
+	&--white {
+		color: $white;
+	}
+}

@@ -1,0 +1,67 @@
+@use 'utilities' as *;
+
+.contact {
+	background-color: $dark-green;
+
+	&__form {
+		padding: 2em;
+		border-radius: 5px;
+		background-color: $white;
+	}
+
+	&__label {
+		margin-bottom: 0.5em;
+		font-size: 1.5rem;
+	}
+
+	&__input {
+		padding: 1em;
+		font-size: 1.2rem;
+		font-family: inherit;
+		border: 2px solid hsl(0, 0%, 67%);
+		border-radius: 5px;
+	}
+
+	&__textarea {
+		resize: vertical;
+		min-height: 10em;
+	}
+
+	&__button {
+		padding: 1em;
+		width: 100%;
+		font-size: 1.4rem;
+		background-color: #dddde0;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0 3px 8px -2px #6a6c7d;
+		transition: background-color 0.5s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $green-check;
+		}
+	}
+
+	&__form-box {
+		display: flex;
+		flex-direction: column;
+		margin: 20px 0;
+	}
+
+	&__google-map {
+		position: relative;
+		margin-top: 10px;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+
+		& iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
