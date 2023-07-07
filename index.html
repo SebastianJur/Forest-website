@@ -7,42 +7,43 @@
     <meta name="description" content="Strona internetowa Forest Group">
     <title>Forest</title>
     <script src="https://kit.fontawesome.com/2a192d5724.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 
 <body class="main-page">
     <nav class="nav">
-    <div class="wrapper wrapper--nav">
+        <div class="wrapper wrapper--nav">
 
-        <div class="nav__logo">
-            <a href="index.html#home"><i class="fa-solid fa-tree"></i> Forest</a>
+            <div class="nav__logo">
+                <a href="index.html#home"><i class="fa-solid fa-tree"></i> Forest</a>
+            </div>
+
+            <div class="nav__links-mobile">
+                <a href="index.html#home" class="nav__link">Home</a>
+                <a href="index.html#about" class="nav__link">O nas</a>
+                <a href="index.html#offers" class="nav__link">Oferta</a>
+                <a href="contact.html" class="nav__link">Kontakt</a>
+            </div>
+
+            <div class="nav__links-desktop">
+                <a href="index.html#home" class="nav__link">Home</a>
+                <a href="index.html#about" class="nav__link">O nas</a>
+                <a href="index.html#offers" class="nav__link">Oferta</a>
+                <a href="contact.html" class="nav__link">Kontakt</a>
+            </div>
+
+            <button class="hamburger hamburger--spin" type="button" aria-label="Przycisk menu mobilnego">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
         </div>
-
-        <div class="nav__links-mobile">
-            <a href="index.html#home" class="nav__link">Home</a>
-            <a href="index.html#about" class="nav__link">O nas</a>
-            <a href="index.html#offers" class="nav__link">Oferta</a>
-            <a href="contact.html" class="nav__link">Kontakt</a>
-        </div>
-
-        <div class="nav__links-desktop">
-            <a href="index.html#home" class="nav__link">Home</a>
-            <a href="index.html#about" class="nav__link">O nas</a>
-            <a href="index.html#offers" class="nav__link">Oferta</a>
-            <a href="contact.html" class="nav__link">Kontakt</a>
-        </div>
-
-        <button class="hamburger hamburger--spin" type="button" aria-label="Przycisk menu mobilnego">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-
-    </div>
-</nav>
+    </nav>
     <header id="home" class="header section">
         <div class="wrapper">
             <p class="header__text">Forest Group</p>
@@ -58,9 +59,9 @@
                 <div class="about__box">
                     <div class="about__box-img">
                         <picture>
-                            <source srcset="../dist/img/aboutus-desktop.jpg" media="(min-width: 992px)">
-                            <img src="../dist/img/aboutus-mobile.jpg" srcset="../dist/img/aboutus-mobile.jpg 991w,
-                                         ../dist/img/aboutus-desktop.jpg 992w" sizes="(max-width: 991px) 100vw,
+                            <source srcset="dist/img/aboutus-desktop.jpg" media="(min-width: 992px)">
+                            <img src="dist/img/aboutus-mobile.jpg" srcset="dist/img/aboutus-mobile.jpg 991w,
+                                         dist/img/aboutus-desktop.jpg 992w" sizes="(max-width: 991px) 100vw,
                                         992px" alt="Zdjęcie jeziora w głębi lasu" class="about__img">
                         </picture>
                     </div>
@@ -159,47 +160,46 @@
         </section>
     </main>
     <footer class="footer">
-    <div class="wrapper wrapper--narrow">
-        <div class="footer__boxes">
-            <div class="footer__box">
-                <h3 class="footer__box-logo">
-                    <i class="fa-solid fa-tree"></i>
-                    Forest
-                </h3>
-            </div>
+        <div class="wrapper wrapper--narrow">
+            <div class="footer__boxes">
+                <div class="footer__box">
+                    <h3 class="footer__box-logo">
+                        <i class="fa-solid fa-tree"></i>
+                        Forest
+                    </h3>
+                </div>
 
-            <div class="footer__box">
-                <h3 class="footer__box-title">O nas</h3>
-                <ul class="footer__box-list">
-                    <li class="footer__box-list-item">Historia</li>
-                    <li class="footer__box-list-item">Parki</li>
-                    <li class="footer__box-list-item">Opinie</li>
-                </ul>
-            </div>
+                <div class="footer__box">
+                    <h3 class="footer__box-title">O nas</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item">Historia</li>
+                        <li class="footer__box-list-item">Parki</li>
+                        <li class="footer__box-list-item">Opinie</li>
+                    </ul>
+                </div>
 
-            <div class="footer__box">
-                <h3 class="footer__box-title">Nasza firma</h3>
-                <ul class="footer__box-list">
-                    <li class="footer__box-list-item">Praca</li>
-                    <li class="footer__box-list-item">Kadry</li>
-                    <li class="footer__box-list-item">Zarząd</li>
-                </ul>
-            </div>
+                <div class="footer__box">
+                    <h3 class="footer__box-title">Nasza firma</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item">Praca</li>
+                        <li class="footer__box-list-item">Kadry</li>
+                        <li class="footer__box-list-item">Zarząd</li>
+                    </ul>
+                </div>
 
-            <div class="footer__box">
-                <h3 class="footer__box-title">Dokumenty</h3>
-                <ul class="footer__box-list">
-                    <li class="footer__box-list-item">Wnioski</li>
-                    <li class="footer__box-list-item">Rezerwacje</li>
-                </ul>
-            </div>
+                <div class="footer__box">
+                    <h3 class="footer__box-title">Dokumenty</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item">Wnioski</li>
+                        <li class="footer__box-list-item">Rezerwacje</li>
+                    </ul>
+                </div>
 
+            </div>
         </div>
-    </div>
-    <p class="footer__bottom-text"> &copy; <span class="footer_year"></span> Forest Group Company Ltd.</p>
-</footer>
+        <p class="footer__bottom-text"> &copy; <span class="footer_year"></span> Forest Group Company Ltd.</p>
+    </footer>
     <script src="dist/js/main.min.js"></script>
-    <script src="dist/js/scroll.min.js"></script>
 </body>
 
 </html>
