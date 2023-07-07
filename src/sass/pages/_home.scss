@@ -168,10 +168,14 @@
 
 	&__button-container {
 		margin-top: 1em;
-		text-align: center;
 	}
 
 	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		width: 190px;
 		padding: 0.5em 2em;
 		border-radius: 5px;
 		color: $black;
@@ -180,8 +184,9 @@
 		box-shadow: 0 3px 8px -2px #6a6c7d;
 		transition: background-color 0.5s;
 
-		i.fa-arrow-right {
+		&-svg {
 			margin-left: 0.5em;
+			width: 2rem;
 		}
 
 		&:hover {

@@ -17,14 +17,16 @@
 	}
 
 	&__box-logo {
+		display: flex;
+		align-items: center;
 		color: $black;
 		font-size: 4rem;
 		font-weight: 400;
+	}
 
-		i.fa-tree {
-			color: $logo;
-			font-size: 40px;
-		}
+	&__logo-svg {
+		margin-right: 0.2em;
+		width: 3.5rem;
 	}
 
 	&__box-title {
